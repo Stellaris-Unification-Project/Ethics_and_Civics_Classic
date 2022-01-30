@@ -38,10 +38,7 @@ action_make_rival = {
 				AND = {
 					has_civic = civic_machine_terminator
 					from = {
-						OR = {
-							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
-						}
+						is_synthetic_empire = yes
 					}
 				}
 			}

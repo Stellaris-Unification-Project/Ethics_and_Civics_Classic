@@ -2462,8 +2462,10 @@ building_biofuel_plant = {
 	category = manufacturing
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 	
 	planet_modifier = {
@@ -2720,8 +2722,10 @@ building_institute = {
 	category = research
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		exists = owner
 		owner = { is_regular_empire = yes }
 	}
@@ -3212,12 +3216,10 @@ building_temple = {
 
 	show_tech_unlock_if = {
 		is_spiritualist = yes
-		NOT = {
-			OR = {
+		NOR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
+}
 	}
 
 	triggered_desc = {
@@ -3323,12 +3325,10 @@ building_holotemple = {
 
 	show_tech_unlock_if = {
 		is_spiritualist = yes
-		NOT = {
-			OR = {
+		NOR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
+}
 	}
 
 	triggered_desc = {
@@ -3450,12 +3450,10 @@ building_sacred_nexus = {
 
 	show_tech_unlock_if = {
 		is_spiritualist = yes
-		NOT = {
-			OR = {
+		NOR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
+}
 	}
 
 	triggered_desc = {
@@ -6350,8 +6348,10 @@ building_galactic_stock_exchange = {
 	category = trade
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 
 	allow = {

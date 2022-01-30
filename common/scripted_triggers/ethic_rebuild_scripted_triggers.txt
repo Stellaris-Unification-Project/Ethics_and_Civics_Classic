@@ -49,8 +49,10 @@ has_encountered_other_species = {
 		has_valid_civic = civic_slave_race
 		num_communications > 0
 		any_owned_pop = {
-			NOT = { has_trait = "trait_mechanical" }
-			NOT = { is_same_species = prev }
+			NOR = {
+				has_trait = "trait_mechanical"
+				is_same_species = prev
+			}
 		}
 	}
 }
@@ -64,10 +66,14 @@ ruler_job_check_trigger = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
-		NOT = { has_trait = trait_syncretic_proles }
-		NOT = { has_trait = trait_symbiotic }
-		NOT = { has_trait = trait_slave_gene }
-		NOT = { has_trait = trait_nerve_stapled }
+		NOR = {
+			has_trait = trait_syncretic_proles
+			has_trait = trait_symbiotic
+		}
+		NOR = {
+			has_trait = trait_slave_gene
+			has_trait = trait_nerve_stapled
+		}
 		OR = {
 			NOT = { has_trait = trait_mechanical }
 			AND = {

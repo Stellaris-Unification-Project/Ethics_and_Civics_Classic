@@ -202,7 +202,7 @@ manufacturers = {
 							any_owned_planet = {
 								NOR = {
 									is_same_value = prevprevprev
-									is_same_value = root.owner.capital_scope
+									is_same_empire = root.owner.capital_scope
 								}
 							}
 						}

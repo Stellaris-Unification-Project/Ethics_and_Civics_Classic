@@ -3057,7 +3057,7 @@ resolution_greatergood_five_year_plans = {
 	}
 
 	breach = {
-		NOT = { is_gestalt = yes }
+		is_gestalt = no
 		any_owned_pop = {
 			is_sapient = yes
 			has_living_standard = { type = living_standard_subsistence }

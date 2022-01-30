@@ -267,10 +267,7 @@ tech_psionic_theory = {
 		factor = 5 #very rare tech
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -1915,10 +1912,7 @@ tech_centralized_state = {
 		}
 		modifier = {
 			factor = 1.25
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = yes
 		}
 
 		modifier = {
@@ -1972,10 +1966,7 @@ tech_federal_state = {
 		}
 		modifier = {
 			factor = 1.25
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = yes
 		}
 
 		modifier = {
